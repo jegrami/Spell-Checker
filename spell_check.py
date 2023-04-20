@@ -12,9 +12,8 @@ def check_spelling():
                return correct_word.title()
            
            elif response == 'no':
-               print(f"Sure about '{word}'? The word is not recognized. Check and try again.")
+               print(f"Are you sure about {word}? Check and try again.")
         else:
             return word.title()
-        continue
 word = check_spelling()
 print(f"The word is {word.title()}.")
